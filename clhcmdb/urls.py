@@ -24,4 +24,5 @@ urlpatterns = [
     # 配置admindoc
     url(r'doc/', include('django.contrib.admindocs.urls'), name='doc'),
     path('', admin.site.urls),
+    url(r'myecharts', include('myecharts.urls'))
 ]

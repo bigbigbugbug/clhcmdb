@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '93!wbdwkq)3tq4$-5lf-9z7_r=vxd$@qp@k09=p#v^n=@izw)@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*',]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'finance',
     'django.contrib.admindocs',
     'device',
+    'myecharts',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -134,6 +136,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+MOD_WSGI_APACHE_ROOTDIR = "/Apache24/bin"
 
 
 # Static files (CSS, JavaScript, Images)
